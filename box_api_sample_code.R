@@ -1,7 +1,7 @@
 ## This code block is written by Dave Buckler & Michael Fichman
 ## mfichman@upenn.edu
 
-## last update 1 March, 2021
+## last update 31 January, 2023
 
 install.packages('boxr')
 library(boxr)
@@ -16,6 +16,8 @@ library(boxr)
 # 4. Do not set up administrative actions - they will likely trigger permissions
 # problems with your app.
 # 5. Set the redirect url to http://localhost
+# Note - You may need to change the OAuth uri to http://localhost:1410/
+# As per this issue: https://github.com/r-box/boxr/issues/58
 # 6. Once you have created and App within Box, copy the client keys below from the web console
 
 box_auth(client_id = "", 
